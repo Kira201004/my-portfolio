@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet | Nyein Chan Tun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="logo">Nyein Chan Tun</div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+        ☰
+    </button>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="html-cheatsheet.html" class="active">HTML Cheat Sheet</a></li>
+            <li><a href="hobby.html">My Hobby</a></li>
+        </ul>
+    </nav>
+
+    <button id="theme-toggle" class="theme-toggle">
+        🌙
+    </button>
+</header>
+
+<main class="section">
+    <h1>HTML Cheat Sheet</h1>
+    <p>
+        This page is my personal HTML reference. It includes common tags and how I use them.
+    </p>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Element / Feature</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>&lt;h1&gt;–&lt;h6&gt;</td>
+            <td>Headings, used for titles.</td>
+            <td><code>&lt;h1&gt;Main Title&lt;/h1&gt;</code></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>&lt;p&gt;</td>
+            <td>Paragraph of text.</td>
+            <td><code>&lt;p&gt;Hello world&lt;/p&gt;</code></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>&lt;a&gt;</td>
+            <td>Link to another page or website.</td>
+            <td><code>&lt;a href="https://example.com"&gt;Click&lt;/a&gt;</code></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>&lt;img&gt;</td>
+            <td>Displays an image.</td>
+            <td><code>&lt;img src="image.jpg" alt="Description"&gt;</code></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>&lt;ul&gt; &amp; &lt;li&gt;</td>
+            <td>Unordered list.</td>
+            <td><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>&lt;ol&gt; &amp; &lt;li&gt;</td>
+            <td>Ordered (numbered) list.</td>
+            <td><code>&lt;ol&gt;&lt;li&gt;First&lt;/li&gt;&lt;/ol&gt;</code></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>&lt;div&gt;</td>
+            <td>Block-level container for content.</td>
+            <td><code>&lt;div class="box"&gt;Content&lt;/div&gt;</code></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>&lt;span&gt;</td>
+            <td>Inline container, often used for styling part of text.</td>
+            <td><code>&lt;span class="highlight"&gt;text&lt;/span&gt;</code></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>&lt;header&gt; &amp; &lt;footer&gt;</td>
+            <td>Semantic elements for top and bottom of a page.</td>
+            <td><code>&lt;header&gt;Site Title&lt;/header&gt;</code></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>&lt;nav&gt;</td>
+            <td>Section of page with navigation links.</td>
+            <td><code>&lt;nav&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/nav&gt;</code></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>&lt;section&gt;</td>
+            <td>Logical section of content.</td>
+            <td><code>&lt;section&gt;About me&lt;/section&gt;</code></td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>&lt;article&gt;</td>
+            <td>Independent content like a blog post.</td>
+            <td><code>&lt;article&gt;Post&lt;/article&gt;</code></td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;</td>
+            <td>Tabular data.</td>
+            <td><code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>&lt;form&gt;, &lt;input&gt;, &lt;button&gt;</td>
+            <td>Collect user input.</td>
+            <td><code>&lt;form&gt;&lt;input type="text"&gt;&lt;button&gt;Send&lt;/button&gt;&lt;/form&gt;</code></td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>&lt;link&gt; &amp; &lt;script&gt;</td>
+            <td>Include CSS and JavaScript files.</td>
+            <td><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; <span id="year"></span> Nyein Chan Tun. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

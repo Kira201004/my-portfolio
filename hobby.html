@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby | Nyein Chan Tun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="logo">Nyein Chan Tun</div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+        ☰
+    </button>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="html-cheatsheet.html">HTML Cheat Sheet</a></li>
+            <li><a href="hobby.html" class="active">My Hobby</a></li>
+        </ul>
+    </nav>
+
+    <button id="theme-toggle" class="theme-toggle">
+        🌙
+    </button>
+</header>
+
+<main class="section">
+    <h1>Photography &amp; Travel</h1>
+    <p>
+        I enjoy taking photos of nature, landscapes, and city streets.
+        Photography helps me relax and be creative.
+    </p>
+
+    <section>
+        <h2>Why I Like It</h2>
+        <ul>
+            <li>I can capture beautiful moments.</li>
+            <li>I learn to pay attention to details.</li>
+            <li>It motivates me to explore new places.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Sample Photo Ideas</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Nature</h3>
+                <p>Mountains, trees, rivers, and sunsets.</p>
+            </article>
+            <article class="card">
+                <h3>City</h3>
+                <p>Buildings, lights, and street photography.</p>
+            </article>
+            <article class="card">
+                <h3>Travel</h3>
+                <p>Photos from different cities or countries.</p>
+            </article>
+        </div>
+    </section>
+
+    <section>
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img src="Moraine Lake.jpg" alt="Moraine Lake" class="gallery-img">
+            <img src="Calgary City Beauty.jpg" alt="Calgary City Beauty" class="gallery-img">
+            <img src="Yoho National park.avif" alt="Yoho National park" class="gallery-img">
+        </div>
+
+        <p id="photo-caption" class="photo-caption">
+            Click on a photo to change this caption.
+        </p>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; <span id="year"></span> Nyein Chan Tun. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="logo">Nyein Chan Tun</div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+        ☰
+    </button>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="html-cheatsheet.html">HTML Cheat Sheet</a></li>
+            <li><a href="hobby.html">My Hobby</a></li>
+        </ul>
+    </nav>
+
+    <button id="theme-toggle" class="theme-toggle">
+        🌙
+    </button>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm Nyein Chan Tun</h1>
+            <p>I'm a student at Bow Valley College, learning web development and building cool projects in HTML, CSS, and JavaScript.</p>
+            <a class="btn" href="resume.html">View My Resume</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a Software Development student who enjoys learning how to build websites, write code, and solve problems. I am interested in web development, creating small projects, and improving my programming skills. In the future, I hope to work in the tech industry as a developer and continue growing my knowledge.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Projects & Skills</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Web Development</h3>
+                <p>I create responsive websites using HTML, CSS, and JavaScript.</p>
+            </article>
+
+            <article class="card">
+                <h3>School Projects</h3>
+                <p>I enjoyed working on projects like my personal portfolio website, JavaScript countdown and game projects, and C++ exercises that helped me understand programming logic and problem-solving.</p>
+            </article>
+
+            <article class="card">
+                <h3>Goals</h3>
+                <p>My goal is to become a software developer and continue improving my skills in web development, programming, and building real-world projects.</p>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; <span id="year"></span> Nyein Chan Tun. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+

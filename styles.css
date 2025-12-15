@@ -1,0 +1,262 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* Dark mode */
+body.dark {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background: #222;
+    color: #fff;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav a {
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.nav a:hover,
+.nav a.active {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Theme toggle */
+.theme-toggle {
+    margin-left: 0.5rem;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 999px;
+    padding: 0.2rem 0.6rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Main layout */
+.section {
+    max-width: 1000px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+.section h1,
+.section h2 {
+    margin-bottom: 0.75rem;
+}
+
+.section p {
+    margin-bottom: 0.75rem;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    min-height: 60vh;
+    background: linear-gradient(120deg, #3b82f6, #9333ea);
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.hero p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    background: #fff;
+    color: #111;
+    font-weight: 600;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+
+.card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+body.dark .card {
+    background: #1e1e1e;
+}
+
+/* Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.75rem;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.table th {
+    background: #eee;
+}
+
+body.dark .table th {
+    background: #222;
+}
+
+/* Two columns list */
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.gallery-img {
+    width: 100%;
+    border-radius: 0.75rem;
+    display: block;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.photo-caption {
+    margin-top: 0.75rem;
+    font-style: italic;
+}
+
+/* Footer */
+.site-footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    background: #222;
+    color: #fff;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .nav {
+        position: absolute;
+        top: 56px;
+        right: 0;
+        background: #222;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .nav.open {
+        max-height: 200px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        padding: 0.75rem 1rem;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .hero {
+        min-height: 40vh;
+        text-align: left;
+    }
+}
+
+/* Dark mode tweaks */
+body.dark .site-header,
+body.dark .site-footer {
+    background: #000;
+}
+
+body.dark .nav a:hover,
+body.dark .nav a.active {
+    background: rgba(255,255,255,0.28);
+}
+
+body.dark .table td,
+body.dark .table th {
+    border-color: #444;
+}
